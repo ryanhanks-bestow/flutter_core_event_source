@@ -13,7 +13,7 @@ class FirestoreEntryStoreImpl<Event>
       (documentSnapshot) => documentSnapshot.exists;
   final CollectionReference<Entry<Event>> _entryCollectionReference;
   final CollectionReference<EntryRefLog> _mainEntryRefLogCollectionReference;
-  final CollectionReference<EntryRefLog> _headEntryRefLogCollectionReference;
+  // final CollectionReference<EntryRefLog> _headEntryRefLogCollectionReference;
   final CollectionReference<EntryRef> _headRefCollectionReference;
   final DocumentReference<EntryRef> _mainRefDocumentReference;
   final DocumentReference<EntryRef?> _mainRefMaybeDocumentReference;
@@ -100,8 +100,8 @@ class FirestoreEntryStoreImpl<Event>
         _mainRefMaybeDocumentReference = mainRefMaybeDocumentReference,
         _headRefCollectionReference = headRefCollectionReference,
         _entryCollectionReference = entryCollectionReference,
-        _headEntryRefLogCollectionReference =
-            headEntryRefLogCollectionReference,
+        // _headEntryRefLogCollectionReference =
+        //     headEntryRefLogCollectionReference,
         _mainEntryRefLogCollectionReference =
             mainEntryRefLogCollectionReference,
         _hasContention = hasContention ?? FirestoreEntryStoreImpl.hasContention,

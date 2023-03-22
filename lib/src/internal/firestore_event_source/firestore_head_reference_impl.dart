@@ -6,7 +6,7 @@ import '../../../internal.dart';
 
 class FirestoreHeadReferenceImpl<Event> extends HeadReference<Event> {
   @override
-  final SourceReferenceImpl<Event> sourceReference;
+  final FirestoreSourceReferenceImpl<Event> sourceReference;
 
   @override
   final String headRefName;
@@ -15,11 +15,6 @@ class FirestoreHeadReferenceImpl<Event> extends HeadReference<Event> {
     this.headRefName,
     this.sourceReference,
   );
-
-  @override
-  Future<EventSource<Command, View>> start<Command, State, View>(
-          EventSourcedBehavior<Command, Event, State, View> behavior) async =>
-      await get(behavior: behavior);
 
   @override
   Future<EventSource<Command, View>> get<Command, State, View>({

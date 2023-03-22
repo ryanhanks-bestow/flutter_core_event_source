@@ -12,7 +12,7 @@ class FirestoreEventStoreImpl implements FirestoreEventStore {
   @override
   SourceReference<Event> source<Event>(
       {required String path, required JsonEventConverter<Event> reader}) {
-    return SourceReferenceImpl<Event>(
+    return FirestoreSourceReferenceImpl<Event>(
         firestore: firestore, path: path, eventJsonConverter: reader);
   }
 }
