@@ -1,4 +1,3 @@
-import 'package:core_event_source/event_source.dart';
 import 'package:flutter_core_event_source/flutter_core_event_source.dart';
 import 'package:flutter_test/flutter_test.dart';
 

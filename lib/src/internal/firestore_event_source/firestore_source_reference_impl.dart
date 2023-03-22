@@ -3,16 +3,15 @@ import 'package:core_event_source/event_source.dart';
 
 import '../../../internal.dart';
 
-class SourceReferenceImpl<Event> implements SourceReference<Event> {
+class FirestoreSourceReferenceImpl<Event> implements SourceReference<Event> {
   final FirebaseFirestore firestore;
 
   @override
   final String path;
 
-  @override
   final JsonEventConverter<Event> eventJsonConverter;
 
-  SourceReferenceImpl({
+  FirestoreSourceReferenceImpl({
     required this.firestore,
     required this.path,
     required this.eventJsonConverter,

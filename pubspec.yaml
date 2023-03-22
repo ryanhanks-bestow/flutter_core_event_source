@@ -43,7 +43,6 @@ dev_dependencies:
   matcher:
   mocktail: ^0.3.0
   given_when_then_unit_test:
-  checks: ^0.2.1
 #  core_event_source_test:
   melos: ^3.0.0
   core_event_source_test_util:
